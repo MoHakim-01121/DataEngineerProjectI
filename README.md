@@ -1,50 +1,44 @@
-<<<<<<< HEAD
-# DataEngineerProjectI
-Kumpulan proyek data engineering open source
-=======
-# Proyek 1: Data Cleaning & Transformasi Dasar  
+# Data Engineering Projects - Open Source
 
-## 📌 Deskripsi  
-Proyek ini bertujuan untuk membersihkan dan mentransformasi dataset **NYC Taxi Fare Prediction** agar siap digunakan untuk analisis lebih lanjut. Langkah-langkah utama dalam proyek ini mencakup pembacaan data, pembersihan, dan transformasi data ke format yang lebih efisien seperti **Parquet** atau **Avro**.  
+## Deskripsi Repositori
+Repositori ini berisi serangkaian proyek **Data Engineering** open-source yang dimulai dari proyek dasar dan berkembang menjadi lebih kompleks secara bertahap. Proyek-proyek ini bertujuan untuk meningkatkan keterampilan data engineering melalui penggunaan alat dan teknik modern seperti **ETL**, **Data Warehousing**, **Real-time Data Streaming**, **Batch Processing**, dan **Machine Learning**.
 
-## 🎯 Tujuan  
-- Memahami dasar-dasar **data cleaning** dalam data engineering.  
-- Menggunakan **Pandas** dan **DuckDB** untuk mengelola data.  
-- Mengonversi dataset ke format yang lebih optimal untuk analisis.  
+Repositori ini dirancang untuk membantu kamu membangun keterampilan di bidang data engineering dengan menggunakan alat open-source yang banyak digunakan di industri.
 
-## 📊 Dataset  
-Dataset yang digunakan adalah **NYC Taxi Fare Prediction**, yang berisi informasi tentang perjalanan taksi di New York City, termasuk:  
-- **pickup_datetime** → Waktu penjemputan taksi.  
-- **pickup_longitude & pickup_latitude** → Koordinat lokasi awal.  
-- **dropoff_longitude & dropoff_latitude** → Koordinat tujuan.  
-- **fare_amount** → Total biaya perjalanan.  
+## Daftar Proyek
 
-Dataset ini dapat diunduh dari [Kaggle](https://www.kaggle.com/competitions/new-york-city-taxi-fare-prediction/data).  
+1. **Data Cleaning & Transformasi Dasar**  
+   - **Tujuan**: Membersihkan dan mentransformasi data agar siap untuk analisis lebih lanjut.  
+   - **Tools**: Python, Pandas, DuckDB, Docker  
+   - **Upgrade**: Gunakan Prefect untuk mengotomatisasi pipeline ETL.
 
-## 🛠️ Tools yang Digunakan  
-- **Python** → Bahasa pemrograman utama.  
-- **Pandas** → Digunakan untuk manipulasi dan analisis data.  
-- **DuckDB** → Database SQL ringan untuk query tanpa server.  
-- **Docker** → Untuk menjalankan aplikasi dalam container.  
+2. **ETL dengan Apache Airflow**  
+   - **Tujuan**: Membangun pipeline ETL otomatis untuk memproses dan menyimpan data.  
+   - **Tools**: Apache Airflow, PostgreSQL, Pandas, Docker  
+   - **Upgrade**: Tambahkan Grafana dan Prometheus untuk memonitor pipeline.
 
-## 🔨 Langkah-langkah  
-1. **Baca Dataset** menggunakan **Pandas**.  
-2. **Bersihkan Data**:  
-   - Hapus duplikat.  
-   - Tangani nilai yang hilang (missing values).  
-   - Konversi kolom **pickup_datetime** ke format yang benar.  
-3. **Transformasi Data**:  
-   - Simpan dataset dalam format **Parquet** untuk efisiensi penyimpanan.  
-4. **Gunakan DuckDB** untuk menjalankan query terhadap dataset tanpa database server besar.  
+3. **Data Warehousing dengan Trino & Apache Iceberg**  
+   - **Tujuan**: Membangun sistem data warehouse untuk mengelola dan menganalisis data besar.  
+   - **Tools**: Trino (PrestoSQL), Apache Iceberg, PostgreSQL, dbt  
+   - **Upgrade**: Gunakan Apache Pinot atau Druid untuk mempercepat query analitik.
 
-## 🚀 Instalasi  
-1. Clone repositori ini:  
-   ```bash
-   git clone https://github.com/username/data-engineering-projects.git
-2. Masuk ke direktori proyek:
-  ```bash
-  cd cd data-engineering-projects/1-data-cleaning-transformation
-3. Instalasi dependencies:
-  ```bash
-  pip install -r requirements.txt
->>>>>>> 95305c9 (Menambahkan proyek 1: Data Cleaning & Transformasi)
+4. **Streaming Data dengan Apache Kafka & Apache Flink**  
+   - **Tujuan**: Membangun pipeline pemrosesan data real-time untuk analitik langsung.  
+   - **Tools**: Apache Kafka, Apache Flink, Apache Cassandra, Streamlit  
+   - **Upgrade**: Tambahkan Apache Pulsar sebagai alternatif Kafka.
+
+5. **Machine Learning Skala Besar dengan Apache Spark & MLflow**  
+   - **Tujuan**: Menganalisis data besar untuk membangun model prediksi dan tracking eksperimen.  
+   - **Tools**: Apache Spark, MLflow, Ray, FastAPI  
+   - **Upgrade**: Gunakan Ray Tune untuk hyperparameter tuning agar model lebih optimal.
+
+6. **Batch Processing dengan Apache Beam**  
+   - **Tujuan**: Membangun pipeline pemrosesan batch untuk menganalisis data dalam skala besar.  
+   - **Tools**: Apache Beam, PostgreSQL, Pandas, Docker  
+   - **Upgrade**: Gunakan Airflow untuk mengorkestrasi pipeline batch dan menjadwalkannya.
+
+## Instruksi Menjalankan Proyek
+### 1. **Cloning Repositori**
+Untuk memulai, clone repositori ini ke sistem lokal kamu:
+```bash
+git clone https://github.com/username/DataEngineerProjectI.git
