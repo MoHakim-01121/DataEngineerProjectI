@@ -1,4 +1,4 @@
-# Data Engineering Projects - Open Source
+# Data Engineering Projects
 
 ## Deskripsi Repositori
 Repositori ini berisi serangkaian proyek **Data Engineering** open-source yang dimulai dari proyek dasar dan berkembang menjadi lebih kompleks secara bertahap. Proyek-proyek ini bertujuan untuk meningkatkan keterampilan data engineering melalui penggunaan alat dan teknik modern seperti **Python**, **SQL**, **Apache Kafka**, **Apache Spark**, **Google BigQuery**, **AWS S3**, **Apache Airflow**, dan lebih banyak lagi.
